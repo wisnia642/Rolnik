@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:enabled="true">
+        <item
+            android:id="@+id/app_bar_search"
+            android:actionViewClass="android.support.v7.widget.SearchView"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Wyloguj" />
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Konto"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Podgląd" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Ustawienia" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Zapis do PDF" />
+        <item android:title="Zapis do EXCEL"
+            android:icon="@drawable/ic_menu_share"
+            android:id="@+id/nev_manage1" />
+        <item
+            android:actionViewClass="android.support.v7.widget.SearchView"
+            android:icon="@android:drawable/star_big_off"
+            android:title="Napisz do nas"
+            android:id="@+id/nav_help" />
+    </group>
+    <item android:title="Aktywne Linki">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Link 1"
+                android:checkable="true"
+                android:enabled="true" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Link 2" />
+        </menu>
+    </item>
+
+</menu>

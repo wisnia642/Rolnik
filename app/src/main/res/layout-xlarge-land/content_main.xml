@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.michal_hit_kody.aplikacja_test.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:background="@drawable/acc">
+
+    <EditText
+        android:textColorHint="@android:color/background_light"
+        android:hint="Pass:"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:id="@+id/editText2"
+        android:scrollbarStyle="insideOverlay"
+        android:textCursorDrawable="@android:color/background_light"
+        android:textColorLink="?attr/actionMenuTextColor"
+        android:textColorHighlight="@android:color/holo_blue_light"
+        android:layout_below="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:layout_width="400dp" />
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/reklama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="22dp" />
+
+    <TextView
+        android:text="Nie masz konta, utwórz je teraz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textColorLink="?attr/colorControlHighlight"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/black"
+        android:textSize="25sp"
+        android:layout_above="@+id/reklama"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp" />
+
+    <TextView
+        android:text="Zapomniałeś hasła kliknij"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColorLink="?attr/colorControlHighlight"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp"
+        android:layout_above="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp" />
+
+    <Button
+        android:text="Anuluj"
+        android:layout_width="200dp"
+        android:id="@+id/button2"
+        android:layout_height="50dp"
+        android:layout_above="@+id/textView2"
+        android:layout_alignStart="@+id/checkBox4"
+        android:layout_marginStart="230dp"
+        android:layout_marginBottom="41dp" />
+
+    <Button
+        android:text="Zaloguj"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/button"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignEnd="@+id/checkBox4"
+        android:layout_marginEnd="82dp" />
+
+    <CheckBox
+        android:text="Aktualizacja danych"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox4"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignStart="@+id/checkBox"
+        android:layout_marginTop="28dp" />
+
+    <CheckBox
+        android:text="Zapamiętaj dane logowania"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/editText2"
+        android:layout_alignStart="@+id/editText2" />
+
+    <TextView
+        android:text="Logowanie do aplikacji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textSize="35sp"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editText" />
+
+    <EditText
+        android:textColorHint="@android:color/background_light"
+        android:textCursorDrawable="@android:color/background_light"
+        android:hint="User:"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:textColorLink="?attr/actionMenuTextColor"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

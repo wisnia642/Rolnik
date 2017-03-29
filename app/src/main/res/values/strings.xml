@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Aplikacja</string>
+    <string name="banner">ca-app-pub-9621271949675165/5072406138</string>
+    <string name="interstitial_full_screen">ca-app-pub-9621271949675165/4815590532</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Ustawienia</string>
+    <string name="title_activity_przyp_pass">Przypomnienie hasła</string>
+    <string name="title_activity_nowe_konto">Nowe konta</string>
+    <string name="title_activity_ustawienia">Ustawienia</string>
+    <string name="title_activity_dane1">Wprowadzanie danych</string>
+    <string name="title_activity_dane2">Wprowadzanie danych</string>
+    <string name="title_activity_dane3">Wprowadzanie danych</string>
+    <string name="title_activity_dane4">Wprowadzanie danych</string>
+    <string name="title_activity_dane5">Wprowadzanie danych</string>
+    <string name="title_activity_dane6">Wprowadzanie danych</string>
+    <string name="title_activity_dane7">Wprowadzanie danych</string>
+    <string name="title_activity_dane8">Wprowadzanie danych</string>
+    <string name="title_activity_dane9">Wprowadzanie danych</string>
+    <string name="title_activity_dane10">Wprowadzanie danych</string>
+    <string name="title_activity_dane11">Wprowadzanie danych</string>
+    <string name="title_activity_dane12">Wprowadzanie danych</string>
+    <string name="title_activity_glowne_menu">Glowne menu</string>
+    <string name="title_activity_koniec">Podsumowanie</string>
+    <string name="title_activity_send_help">Wysyłanie Emaila</string>
+    <string name="title_activity_podglad">Podglad</string>
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.michal_hit_kody.aplikacja_test.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:background="@drawable/acc">
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/reklama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="22dp" />
+
+    <CheckBox
+        android:text="Zapamiętaj dane logowania"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:textColor="@android:color/background_light"
+        android:layout_marginBottom="29dp"
+        android:layout_above="@+id/checkBox4"
+        android:layout_alignStart="@+id/textView4"
+        android:textSize="20sp" />
+
+    <EditText
+        android:textColorHint="@android:color/background_light"
+        android:textCursorDrawable="@android:color/background_light"
+        android:hint="User:"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:textColorLink="?attr/actionMenuTextColor"
+        android:textColor="@android:color/white"
+        android:layout_above="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:text="Aktualizacja danych"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox4"
+        android:layout_marginBottom="49dp"
+        android:textColor="@android:color/background_light"
+        android:layout_above="@+id/button2"
+        android:layout_alignStart="@+id/checkBox"
+        android:textSize="20sp" />
+
+    <TextView
+        android:text="Nie masz konta, utwórz je teraz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textColorLink="?attr/colorControlHighlight"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/black"
+        android:layout_marginBottom="116dp"
+        android:textSize="20dp"
+        android:layout_above="@+id/reklama"
+        android:layout_alignStart="@+id/textView5" />
+
+    <TextView
+        android:text="Zapomniałeś hasła kliknij"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColorLink="?attr/colorControlHighlight"
+        android:textColor="@android:color/background_light"
+        android:layout_marginBottom="45dp"
+        android:textSize="20dp"
+        android:layout_above="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:textColorHint="@android:color/background_light"
+        android:hint="Pass:"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:scrollbarStyle="insideOverlay"
+        android:textCursorDrawable="@android:color/background_light"
+        android:textColorLink="?attr/actionMenuTextColor"
+        android:textColorHighlight="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="22dp"
+        android:layout_above="@+id/checkBox"
+        android:layout_alignEnd="@+id/textView4"
+        android:textSize="20sp" />
+
+    <Button
+        android:text="Anuluj"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="77dp" />
+
+    <Button
+        android:text="Zaloguj"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_marginEnd="36dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/button2" />
+
+    <TextView
+        android:text="Logowanie do aplikacji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textSize="30sp"
+        android:textColor="@android:color/background_light"
+        android:layout_marginBottom="42dp"
+        android:layout_above="@+id/editText"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
